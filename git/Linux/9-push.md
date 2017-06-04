@@ -112,8 +112,7 @@ Please make sure you have the correct access rights
 ### Github Pages 显示网站
 
 上面的步骤操作完成，就可以在 l552177239.github.io 看到网站的首页了。
-当然我们这里依然是使用 Github Pages 服务，所以是可以添加 md 文件的，
-具体的操作方式参考[第一节](https://l552177239.github.io/digicity/linux/1-github-pages.html)。
+当然我们这里依然是使用 Github Pages 服务，所以是可以添加 md 文件的。
 
 下面，我们涉及到如何把网站做的好看一些的问题。这个需要了解 github Pages 底层的机制。底层 Github Pages 采用了 Jekyll 框架。
 
@@ -176,7 +175,7 @@ _layouts/default.html 中这样写
 
 css/main.css
 
-```
+```css
 body {
   background: #bada55;
 }
@@ -190,7 +189,7 @@ body {
 基本上会选择另外一种方式，就是 clone 。
 
 ```
-git clone git@github.com:l552177239/digicity.git
+git clone <版本库的网址>
 ```
 
 clone 的特点就是不仅仅可以得到最新代码，而且可以得到整个改版历史。而普通下载只能得到最新版本。
