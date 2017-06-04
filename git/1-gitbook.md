@@ -29,6 +29,18 @@ gitbook serve
 ```
 localhost:4000
 ```
+##编辑书籍
+可以修改 SUMMARY.md 来添加书籍目录
+```markdown
+# Summary
+
+* [Introduction](README.md)
+* 第一章
+  - [第一小节：学习 Git](./git/1-gitbook.md)
+  - [第二小节：Git 本地工作流](./git/2-local-git.md)
+  - [第三小节：Github 基本操作](./git/3-github.md)
+  ```
+  创建 git 文件夹，然后里面就可以写笔记了。其实 gitbook 本身的使用技巧基本就是这些了。
 ###托管gitbook###
 
 在github上创建my-node仓库
@@ -95,7 +107,7 @@ function main() {
     ghpages.publish('./gh-pages', console.error.bind(console));
 }
 ```
-这样，每次书稿有了修改，运行https://github.com/l552177239/my-note
+这样，每次书稿有了修改，运行
 ```
 npm run publish
 ```
