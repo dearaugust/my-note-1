@@ -2,6 +2,8 @@
 title: Github
 ---
 
+#Github
+
 Github.com 是程序员存放代码的一个网站。Github Pages 是 Github 提供的一项服务，可以免费的帮助我们托管网站。
 
 ###注册 Github 账号
