@@ -5,7 +5,7 @@ title: GITBOOK
 ###使用 Gitbook 来做笔记
 
 先装包：
-```npm
+```
 npm install gitbook-cli -g
 ```
 创建笔记文件夹my-note并进入
