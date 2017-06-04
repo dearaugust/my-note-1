@@ -1,6 +1,6 @@
 #GITBOOK#
 
-###使用 Gitbook 来做笔记###
+##使用 Gitbook 来做笔记
 
 先装包：
 ```npm
@@ -24,8 +24,10 @@ gitbook init
 gitbook serve
 ```
 这样，可以启动一个服务器，然后到 localhost:4000 端口，就可以看到这本书了。
+
+在浏览器打开：
 ```
-在浏览器打开：localhost:4000
+localhost:4000
 ```
 ###托管gitbook###
 
@@ -37,9 +39,7 @@ gitbook serve
 ```
 npm init -y
 ```
-
 然后，在package.json 中添加这些代码：
-
 ```
 "scripts": {
  "start": "gitbook serve ./content ./gh-pages",
@@ -53,8 +53,7 @@ npm init -y
 ```
 npm start
 ```
-创建一个.gitignore文件将不上传的文件添加
-
+在my-note文件夹里创建一个.gitignore文件将不上传的文件添加
 ```
 # dependencies
 /node_modules
@@ -69,16 +68,21 @@ git add -A
 git commit -a -m 'new'
 git remote add origin https://github.com/l552177239/my-note.git
 git push -u origin master
-``
-部署书籍到 gh-pages
-
- - 第一步：运行：npm run build，把md文件转化为html放到gh-pages文件夹
+```
+##部署书籍到 gh-pages
+这一步，可以手动做：
+ - 第一步：运行：npm run build，把md文件转化为html放到gh-pages文件夹n
  - 第二步：拷贝gh-pages中的所有文件，到gh-pages分支，然后上传
  - 第三步：以后每次修改完都拷贝到gh-pages分支，很麻烦
 
-安包：npm i gh-pages --save
+所以，我们采用一个 npm 包，来帮助我们完成上面的操作
 
-在script文件夹下创建deploy-gh-pages.js
+装包：
+```
+npm i gh-pages --save
+```
+然后创建 my-note/scripts/deploy-gh-pages.js
+
 将下面代码拷贝进去
 ```
 'use strict';
@@ -91,3 +95,8 @@ function main() {
     ghpages.publish('./gh-pages', console.error.bind(console));
 }
 ```
+这样，每次书稿有了修改，运行https://github.com/l552177239/my-note
+```
+npm run publish
+```
+就可以把书稿部署到 http://l552177239.github.io/my-note
