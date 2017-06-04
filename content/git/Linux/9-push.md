@@ -157,7 +157,7 @@ _layouts/default.html 内容如下，可以参考我的其他项目中的写法�
 
 _layouts/default.html 中这样写
 
-```
+```html
 <html>
   <head>
     <link rel="stylesheet" href="/css/main.css"
