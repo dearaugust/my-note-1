@@ -1,6 +1,9 @@
-#GITBOOK#
+---
+title: GITBOOK
+---
 
-##使用 Gitbook 来做笔记
+
+###使用 Gitbook 来做笔记
 
 先装包：
 ```npm
@@ -29,7 +32,7 @@ gitbook serve
 ```
 localhost:4000
 ```
-##编辑书籍
+###编辑书籍
 可以修改 SUMMARY.md 来添加书籍目录
 ```markdown
 # Summary
@@ -41,7 +44,8 @@ localhost:4000
   - [第三小节：Github 基本操作](./git/3-github.md)
 ```
 创建 git 文件夹，然后里面就可以写笔记了。其实 gitbook 本身的使用技巧基本就是这些了。
-###托管gitbook###
+
+###托管gitbook
 
 在github上创建my-node仓库
 
@@ -81,7 +85,8 @@ git commit -a -m 'new'
 git remote add origin https://github.com/l552177239/my-note.git
 git push -u origin master
 ```
-##部署书籍到 gh-pages
+###部署书籍到 gh-pages
+
 这一步，可以手动做：
  - 第一步：运行：npm run build，把md文件转化为html放到gh-pages文件夹n
  - 第二步：拷贝gh-pages中的所有文件，到gh-pages分支，然后上传

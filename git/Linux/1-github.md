@@ -1,8 +1,10 @@
-#Github
+---
+title: Github
+---
 
 Github.com 是程序员存放代码的一个网站。Github Pages 是 Github 提供的一项服务，可以免费的帮助我们托管网站。
 
-##注册 Github 账号
+###注册 Github 账号
 
 点 github.com 首页的 Sign Up （注册）按钮，进行注册。
 
@@ -25,13 +27,13 @@ repository （仓库）这个词基本上等价于 project ，差别如下：
 
 repository = project + history
 
-##搭建 Github 网站
+###搭建 Github 网站
 
 创建一个仓库，仓库的名字是有严格规定的，
 ```
 username.github.io
 ```
-把 username 替换成自己的自己的用户名。例如我叫 happypeter ，我要创建的仓库名就是
+把 username 替换成自己的自己的用户名。例如我叫 l ，我要创建的仓库名就是
 
 l552177239.github.io
 
@@ -48,4 +50,4 @@ Initialize this repository with a README
 
 添加一些基本的 html 内容进 index.html ，然后点 “Commit New File” 进行保存。
 
-注意：新添加的内容，不一定立刻能显示到 happypeter.github.io ，可能会有五六分钟的延迟。
+注意：新添加的内容，不一定立刻能显示到 l552177239.github.io ，可能会有五六分钟的延迟。
